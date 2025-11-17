@@ -1,3 +1,8 @@
-input1 = int(input())``
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
+import requests
 
-print("hello world")
+AEMET_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnaXQ4ODg4bWFuQGdtYWlsLmNvbSIsImp0aSI6IjJiOWJmYjI3LWQ4YzItNDI4OC1hNGJiLTAwZmEwZTZkNGJkZSIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNzYzMTQ1OTI4LCJ1c2VySWQiOiIyYjliZmIyNy1kOGMyLTQyODgtYTRiYi0wMGZhMGU2ZDRiZGUiLCJyb2xlIjoiIn0.ZYOxaYWqr4dHjaDSy85vVPcyGjABSGi_asqPrqlSdUE"
+
+
+app = ApplicationBuilder().token("8384257308:AAEM2sgQwjkLys79Xzm4RxMwn1t8v6hLpNI").build()
